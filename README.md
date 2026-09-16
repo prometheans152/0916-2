@@ -116,15 +116,43 @@ streamlit run app.py
     - **優雅降級保護**：若環境異常自動平滑降級為 Streamlit 原生 `st.map`。
   - **互動式趨勢折線圖**：Plotly 雙色折線圖（最高溫/最低溫），支援 Hover 懸浮提示、圖例點擊切換。
   - **詳細預報表格**：完整列出日期、最低氣溫、最高氣溫。
-  - **狀態提示**：若 `data.db` 尚未初始化，畫面會給予引導按鈕快速建置。
+  - **雲端與離線自動引導 (Auto Bootstrap)**：初次載入或雲端部署環境下若無 `data.db`，系統全自動初始化載入氣象資料，無需使用者手動點擊按鈕，即開即用。
+
+---
+
+## Streamlit Community Cloud 雲端部署指南
+
+本專案已最佳化以支援 **Streamlit Community Cloud** 快速一鍵部署，並具備初次造訪自動初始化機制（因 `data.db` 依安全規範不納入版本控制）：
+
+### 1. 部署基本設定 (App Settings)
+- **Repository**：`https://github.com/prometheans152/0916-2.git`（或您的 fork 儲存庫）
+- **Branch**：`main`
+- **Main file path**：`app.py`
+- **Python version**：`3.11`（或 `3.10+`）
+- **相依套件管理**：Streamlit Cloud 會自動偵測並以標準 pip 安裝 `requirements.txt`（包含 `streamlit`, `pandas`, `plotly`, `requests` 等，**無須 uv**）。
+
+### 2. 設定 API 金鑰 (Secrets Management)
+在 Streamlit Community Cloud 的 App 儀表板中，點選 **Settings -> Secrets**，填入您的中央氣象署 API 金鑰：
+
+```toml
+# Streamlit Community Cloud Secrets (根層級變數會自動注入為環境變數)
+CWA_API_KEY = "CWA-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+```
+
+> **安全與自動適配機制說明**：
+> 1. **即時連線優先**：若設定了 `CWA_API_KEY`，雲端應用在初次載入時會自動呼叫中央氣象署官方 `F-C0032-003` 即時開放資料 API，解析後寫入暫存 SQLite 資料庫，並在頁面上標示 `🟢 資料來源：LIVE CWA (F-C0032-003)`。
+> 2. **零設定離線展示保護**：若未填寫金鑰或中央氣象署網路異常，雲端應用會**自動平滑降級**載入 `fixtures/cwa_sample.json` 範例資料，並標示 `📦 資料來源：Offline Sample (fixtures/cwa_sample.json)`。**全站圖表與互動地圖依舊能完整渲染運作，不會當機，亦無須訪客手動點擊初始化按鈕**。
+> 3. **金鑰保密防護**：金鑰永遠不會被暴露、記錄或輸出至前端畫面。
 
 ---
 
 ## 自動化單元測試
 
-執行全部 11 項自動化測試（包含解析、資料庫生命週期、欄位大小寫、CLI 流程、前端語法、代表性座標檢驗、均溫與四色階邏輯驗證、Streamlit 冒煙測試）：
+執行全部 13 項自動化測試（包含解析、資料庫生命週期、欄位大小寫、CLI 流程、前端語法、代表性座標檢驗、均溫與四色階邏輯驗證、Streamlit AppTest 冒煙測試、雲端自動初始化與金鑰解析測試）：
 
 ```powershell
-pytest
+# 使用虛擬環境執行 pytest
+.\.venv\Scripts\pytest -v
 ```
-*(使用 uv 時為 `uv run pytest`)*
+*(使用 uv 時為 `uv run pytest -v`)*
+

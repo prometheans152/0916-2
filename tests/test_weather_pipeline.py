@@ -231,4 +231,43 @@ def test_avgt_calculation_and_color_bins():
     assert get_temp_color(30.1) == TEMP_BIN_COLORS["> 30°C"]
 
 
+def test_streamlit_app_autobootstrap_on_missing_db(tmp_path):
+    """Smoke test app.py automatic bootstrap when database does not exist on first load."""
+    from streamlit.testing.v1 import AppTest
 
+    missing_db = str(tmp_path / "autobootstrap_data.db")
+    assert not os.path.exists(missing_db)
+
+    os.environ["WEATHER_DB_PATH"] = missing_db
+    try:
+        app_path = str(Path(__file__).parent.parent / "app.py")
+        at = AppTest.from_file(app_path)
+        at.run(timeout=10)
+        assert not at.exception
+
+        # Verify database was automatically created and populated without clicking any button
+        assert os.path.exists(missing_db)
+
+        # Verify dropdown selectboxes and data table are fully populated
+        assert len(at.selectbox) >= 2
+        assert len(at.selectbox[0].options) == 6
+        assert len(at.selectbox[1].options) == 7
+        assert len(at.dataframe) >= 1
+
+        # Verify non-secret data source status badge is displayed
+        assert len(at.info) >= 1 or len(at.success) >= 1
+    finally:
+        os.environ.pop("WEATHER_DB_PATH", None)
+
+
+def test_streamlit_app_autobootstrap_with_live_mock(tmp_path, monkeypatch, sample_cwa_data):
+    """Verify live API bootstrapping when CWA_API_KEY is present in environment."""
+    from app import bootstrap_database
+
+    mock_db = str(tmp_path / "live_mock.db")
+    monkeypatch.setenv("CWA_API_KEY", "test_mock_key")
+    monkeypatch.setattr("weather_service.fetch_cwa_forecast", lambda api_key=None: sample_cwa_data)
+
+    source = bootstrap_database(db_path=mock_db)
+    assert "LIVE CWA" in source
+    assert os.path.exists(mock_db)

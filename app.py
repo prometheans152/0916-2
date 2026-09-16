@@ -72,28 +72,124 @@ def check_and_prepare_db(db_path: str = DB_PATH) -> bool:
         return False
 
 
-# Database existence check & automatic initialization helper
-if not check_and_prepare_db(DB_PATH):
-    st.warning(f"⚠️ 資料庫 `{DB_PATH}` 尚未初始化或尚無資料。")
-    st.info("請先執行後端管線以載入氣溫資料，或點擊下方按鈕以範例資料快速初始化：")
-    col1, col2 = st.columns(2)
-    with col1:
-        if st.button("🚀 使用離線範例資料初始化資料庫"):
-            from weather_service import parse_temperature_forecasts, save_to_db
-            import json
-            from pathlib import Path
-            fixture_file = Path(__file__).parent / "fixtures" / "cwa_sample.json"
-            if fixture_file.exists():
-                with open(fixture_file, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                records = parse_temperature_forecasts(data)
-                save_to_db(records, db_path=DB_PATH)
-                st.success("✅ 資料庫初始化完成！請重新整理頁面。")
-                st.rerun()
-            else:
-                st.error("找不到離線 fixture 檔案。")
-    st.code("python main.py", language="bash")
-    st.stop()
+def resolve_cwa_api_key() -> str | None:
+    """Retrieve CWA API key without exposing secret.
+    
+    Checks:
+    1. Environment variable CWA_API_KEY (Streamlit Community Cloud root-level secrets become env vars)
+    2. Streamlit secrets st.secrets["CWA_API_KEY"]
+    3. weather_service.get_api_key fallback (local api_key.txt)
+    """
+    # 1. Environment variable
+    env_key = os.environ.get("CWA_API_KEY", "").strip()
+    if env_key:
+        return env_key
+
+    # 2. Streamlit secrets (safely handle environments without secrets.toml)
+    try:
+        if hasattr(st, "secrets") and "CWA_API_KEY" in st.secrets:
+            sec_key = str(st.secrets["CWA_API_KEY"]).strip()
+            if sec_key:
+                return sec_key
+    except Exception:
+        pass
+
+    # 3. weather_service helper (supports local api_key.txt)
+    try:
+        from weather_service import get_api_key
+        return get_api_key()
+    except Exception:
+        pass
+
+    return None
+
+
+def bootstrap_database(db_path: str = DB_PATH) -> str:
+    """Automatically bootstrap SQLite database when data.db is missing or empty.
+    
+    Tries live CWA API (F-C0032-003) if CWA_API_KEY is configured.
+    Falls back to fixtures/cwa_sample.json if live call fails or key is missing.
+    Returns a concise non-secret data source description.
+    """
+    from weather_service import (
+        fetch_cwa_forecast,
+        parse_temperature_forecasts,
+        save_to_db,
+    )
+    import json
+    from pathlib import Path
+
+    key = resolve_cwa_api_key()
+    if key:
+        try:
+            raw_data = fetch_cwa_forecast(api_key=key)
+            records = parse_temperature_forecasts(raw_data)
+            if records:
+                save_to_db(records, db_path=db_path, drop_existing=True)
+                return "LIVE CWA (F-C0032-003)"
+        except Exception:
+            # Fall back to offline fixture if live fetch encounters network/HTTP issues
+            pass
+
+    # Offline sample fallback for zero-configuration public cloud deployment
+    fixture_file = Path(__file__).parent / "fixtures" / "cwa_sample.json"
+    if fixture_file.exists():
+        with open(fixture_file, "r", encoding="utf-8") as f:
+            raw_data = json.load(f)
+        records = parse_temperature_forecasts(raw_data)
+        save_to_db(records, db_path=db_path, drop_existing=True)
+        return "Offline Sample (fixtures/cwa_sample.json)"
+
+    raise RuntimeError("無法初始化資料庫：未設定 API 金鑰且找不到範例資料 (fixtures/cwa_sample.json)。")
+
+
+def ensure_database_ready(db_path: str = DB_PATH) -> str:
+    """Ensure database exists and is populated, returning non-secret source string."""
+    if not check_and_prepare_db(db_path):
+        source = bootstrap_database(db_path)
+        st.session_state["data_source"] = source
+        return source
+
+    if "data_source" in st.session_state:
+        return st.session_state["data_source"]
+
+    # If DB already exists on disk, determine if it originated from sample fixture or live API
+    try:
+        conn = sqlite3.connect(db_path)
+        cur = conn.cursor()
+        cur.execute("SELECT MIN(dataDate) FROM TemperatureForecasts")
+        row = cur.fetchone()
+        conn.close()
+        min_date = row[0] if row else ""
+        if min_date and min_date.startswith("2024"):
+            source = "Offline Sample (fixtures/cwa_sample.json)"
+        else:
+            source = "LIVE CWA (F-C0032-003)"
+    except Exception:
+        source = "SQLite Database (data.db)"
+
+    st.session_state["data_source"] = source
+    return source
+
+
+# Automatic database bootstrapping on first page load (no button click required)
+current_data_source = ensure_database_ready(DB_PATH)
+
+# Sidebar with data source status & optional manual refresh
+with st.sidebar:
+    st.header("⚙️ 資料來源與管理")
+    st.write(f"**當前模式**：\n`{current_data_source}`")
+    if st.button("🔄 重新整理氣象資料 (Refresh Data)"):
+        new_source = bootstrap_database(DB_PATH)
+        st.session_state["data_source"] = new_source
+        st.rerun()
+
+# Concise non-secret status badge on the main page
+if "LIVE" in current_data_source.upper():
+    st.success(f"🟢 **資料來源 (Data Source)**：{current_data_source}（即時預報連線中）")
+else:
+    st.info(f"📦 **資料來源 (Data Source)**：{current_data_source}（示範展示模式）")
+
 
 
 # 1. Connect to SQLite database and query distinct regions & forecast dates
