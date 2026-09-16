@@ -1,0 +1,4393 @@
+{
+  "cwaopendata": {
+    "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
+    "Identifier": "a81c0d9f-2ba2-4681-bdcd-5ae47209e682",
+    "Sender": "fss@wfc.cwa.gov.tw",
+    "Sent": "2026-09-16T18:13:38+08:00",
+    "Status": "Actual",
+    "MsgType": "Issue",
+    "Source": "Weather Forecast Center",
+    "Dataid": "C0032-003",
+    "Scope": "Public",
+    "Dataset": {
+      "DatasetInfo": {
+        "DatasetDescription": "七天天氣預報",
+        "DatasetLanguage": "zh-TW",
+        "DataValueInfo": {
+          "MaxTemperature": {
+            "@description": "最高溫度",
+            "@unit": "攝氏度"
+          },
+          "MinTemperature": {
+            "@description": "最低溫度",
+            "@unit": "攝氏度"
+          },
+          "Weather": {
+            "@description": "天氣現象",
+            "@unit": "NA"
+          },
+          "WeatherCode": {
+            "@description": "天氣現象代碼",
+            "@unit": "NA"
+          }
+        },
+        "IssueTime": "2026-09-16T17:00:00+08:00",
+        "Update": "2026-09-16T18:13:38+08:00"
+      },
+      "Locations": {
+        "Location": [
+          {
+            "LocationName": "北部地區",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "27"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "31"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "31"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "22"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "22"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "23"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "23"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "23"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "21"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "中部地區",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時晴",
+                      "WeatherCode": "03"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "33"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "34"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "34"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "33"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "32"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "32"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "南部地區",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴午後短暫陣雨",
+                      "WeatherCode": "19"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "33"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "33"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "34"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "32"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "32"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "32"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "27"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "東北部地區",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲",
+                      "WeatherCode": "04"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "陰短暫陣雨",
+                      "WeatherCode": "11"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時晴",
+                      "WeatherCode": "03"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "23"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "23"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "22"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "臺北市",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時陰",
+                      "WeatherCode": "05"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "31"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "23"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "22"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "東部地區",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時陰",
+                      "WeatherCode": "05"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時晴",
+                      "WeatherCode": "03"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲",
+                      "WeatherCode": "04"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "27"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "東南部地區",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲",
+                      "WeatherCode": "04"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時陰",
+                      "WeatherCode": "05"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "31"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "31"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "澎湖地區",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "金門地區",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "馬祖地區",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時晴",
+                      "WeatherCode": "03"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "27"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "太魯閣",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "陰天",
+                      "WeatherCode": "07"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲",
+                      "WeatherCode": "04"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時晴",
+                      "WeatherCode": "03"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "23"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "拉拉山",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "陰時多雲",
+                      "WeatherCode": "06"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時晴",
+                      "WeatherCode": "03"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "陰時多雲",
+                      "WeatherCode": "06"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲",
+                      "WeatherCode": "04"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "18"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "23"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "23"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "23"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "22"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "22"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "22"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "17"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "16"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "17"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "17"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "16"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "15"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "陽明山",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時晴",
+                      "WeatherCode": "03"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "陰短暫陣雨",
+                      "WeatherCode": "11"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲",
+                      "WeatherCode": "04"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時陰短暫陣雨",
+                      "WeatherCode": "09"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "24"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "19"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "21"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "21"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "20"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "綠島",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時晴",
+                      "WeatherCode": "03"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時晴",
+                      "WeatherCode": "03"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "27"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "31"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "墾丁",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "31"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "27"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "梨山",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "17"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "23"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "23"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "22"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "15"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "13"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "13"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "14"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "14"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "13"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "13"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "蘭嶼",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時晴",
+                      "WeatherCode": "03"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "玉山",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲",
+                      "WeatherCode": "04"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴午後短暫陣雨",
+                      "WeatherCode": "19"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "10"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "19"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "19"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "19"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "18"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "18"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "18"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "9"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "8"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "8"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "8"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "9"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "8"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "日月潭",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時晴",
+                      "WeatherCode": "03"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴午後短暫陣雨",
+                      "WeatherCode": "19"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "22"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "21"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "21"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "21"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "22"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "22"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "21"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "溪頭",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲",
+                      "WeatherCode": "04"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴午後短暫陣雨",
+                      "WeatherCode": "19"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "21"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "24"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "18"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "17"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "17"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "18"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "18"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "18"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "17"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "龍洞(東北角風景區)",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲時晴",
+                      "WeatherCode": "03"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "陰天",
+                      "WeatherCode": "07"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "24"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "合歡山",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲",
+                      "WeatherCode": "04"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴午後短暫陣雨",
+                      "WeatherCode": "19"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴午後短暫陣雨",
+                      "WeatherCode": "19"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲",
+                      "WeatherCode": "04"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "10"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "18"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "18"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "18"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "17"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "17"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "16"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "9"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "8"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "8"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "9"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "8"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "8"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "阿里山",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "陰短暫陣雨",
+                      "WeatherCode": "11"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲午後短暫陣雨",
+                      "WeatherCode": "20"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "15"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "20"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "19"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "19"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "13"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "13"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "12"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "13"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "13"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "13"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "13"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "三仙台(東部風景區)",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "多雲短暫陣雨",
+                      "WeatherCode": "08"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "27"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "29"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "LocationName": "小琉球",
+            "WeatherElement": [
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "Weather": "晴時多雲",
+                      "WeatherCode": "02"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "28"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "31"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "31"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "31"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "31"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MaxTemperature": "30"
+                    }
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2026-09-16T18:00:00+0800",
+                    "EndTime": "2026-09-17T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "27"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-17T00:00:00+0800",
+                    "EndTime": "2026-09-18T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-18T00:00:00+0800",
+                    "EndTime": "2026-09-19T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-19T00:00:00+0800",
+                    "EndTime": "2026-09-20T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-20T00:00:00+0800",
+                    "EndTime": "2026-09-21T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-21T00:00:00+0800",
+                    "EndTime": "2026-09-22T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  },
+                  {
+                    "StartTime": "2026-09-22T00:00:00+0800",
+                    "EndTime": "2026-09-23T00:00:00+0800",
+                    "ElementValue": {
+                      "MinTemperature": "26"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

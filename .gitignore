@@ -1,0 +1,21 @@
+# Environment variables & secrets
+.env
+api_key.txt
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Python cache & tests
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Streamlit
+.streamlit/
+
+# Virtual environment
+.venv/
+
