@@ -146,13 +146,58 @@ CWA_API_KEY = "CWA-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 
 ---
 
+## GitHub Pages 靜態儀表板與自動化部署 (GitHub Pages Edition)
+
+為了在 GitHub 上直接提供零後端伺服器負擔的公開預報儀表板，本專案在 `docs/` 目錄下實作了完整的靜態網頁版儀表板，並具備 GitHub Actions 自動化資料更新機制：
+
+### 1. 靜態前端架構與特色
+- **純靜態架構**：位於 `docs/`（包含 `index.html`、`style.css`、`app.js` 與 `data/forecast.json`），完全不依賴後端 Python 伺服器，直接由瀏覽器端運行。
+- **地圖與圖表套件**：
+  - **Leaflet + OpenStreetMap**：呈現台灣六大分區中心代表座標。
+  - **Chart.js**：呈現一週最低溫（MinT）與最高溫（MaxT）趨勢雙折線圖。
+- **100% 忠實對齊教授評分規範**：
+  - **六大分區地圖**：北部、中部、南部、東北部、東部、東南部。
+  - **雙下拉選單**：分區切換（Region）與預報日期切換（Date），操作即時連動所有視覺元件。
+  - **每日均溫計算與四級色階**：`AvgT = (MinT + MaxT) / 2`，嚴格遵照四色標準：
+    - 🔵 `< 20°C`（低溫 / Blue `#1f77b4`）
+    - 🟢 `20–25°C`（舒適 / Green `#2ecc71`）
+    - 🟡 `25–30°C`（溫暖 / Yellow `#f1c40f`）
+    - 🔴 `> 30°C`（炎熱 / Red `#e74c3c`）
+  - **選區強調不覆蓋顏色**：所選分區以較大標記半徑（Radius 18 vs 10）與外環強調，絕不覆蓋當日均溫分類顏色。
+  - **豐富浮動提示卡 (Tooltip)**：滑鼠懸浮或點擊標記顯示：分區名稱、預報日期、平均氣溫（AvgT）、最低氣溫（MinT）、最高氣溫（MaxT）、代表城市、溫級分類與選取狀態。
+  - **4 大關鍵指標卡**：一週最高溫、一週最低溫、平均最高溫、平均最低溫。
+  - **詳細預報表格**：包含日期、MinT、MaxT、AvgT 及色彩標籤。
+  - **資料來源與狀態標章**：明確顯示資料來源（即時 CWA API 或離線範例）與產生時間戳記。
+
+### 2. 資料建置腳本 (`scripts/build_pages_data.py`)
+- 可在本地或 CI/CD 中執行：`python scripts/build_pages_data.py`
+- **金鑰優先**：若環境變數中偵測到 `CWA_API_KEY`，呼叫中央氣象署 `F-C0032-003` 即時 API 匯出最新 42 筆預報至 `docs/data/forecast.json`。
+- **安全降級**：若無金鑰或連線失敗，自動使用本地資料庫或 `fixtures/cwa_sample.json`，確保靜態頁面永遠正常運作。
+- **資安保證**：API Key 永遠不寫入 `forecast.json`、用戶端 JavaScript 或 Git 提交。
+
+### 3. GitHub Actions 自動更新工作流程 (`.github/workflows/pages.yml`)
+- **觸發條件**：
+  - Push 到 `main` 分支。
+  - 手動觸發 (`workflow_dispatch`)。
+  - 定期排程：每日 UTC 22:00（台灣時間清晨 06:00）。
+- **金鑰設定 (Repo Secret)**：
+  - 在 GitHub 儲存庫：**Settings -> Secrets and variables -> Actions** 中新增 Secret `CWA_API_KEY`。
+  - *注意：若尚未設定 `CWA_API_KEY` Secret，Actions 仍會安全使用內建展示資料成功部署，不會報錯。*
+- **啟用 GitHub Pages 設定（一次性操作）**：
+  1. 進入儲存庫頁面：**Settings -> Pages**。
+  2. 在 **Build and deployment** 下方的 **Source** 選擇 **GitHub Actions**。
+  3. 部署完成後，公開網址為：`https://prometheans152.github.io/0916-2/`。
+
+---
+
 ## 自動化單元測試
 
-執行全部 13 項自動化測試（包含解析、資料庫生命週期、欄位大小寫、CLI 流程、前端語法、代表性座標檢驗、均溫與四色階邏輯驗證、Streamlit AppTest 冒煙測試、雲端自動初始化與金鑰解析測試）：
+執行全部 17 項自動化測試（包含解析、資料庫生命週期、欄位大小寫、CLI 流程、前端語法、代表性座標檢驗、均溫與四色階邏輯驗證、Streamlit AppTest 冒煙測試、雲端自動初始化與金鑰解析測試、GitHub Pages 靜態檔案存在性、forecast.json 綱要與值域檢驗、建置腳本降級測試、Actions 工作流程語法驗證）：
 
 ```powershell
 # 使用虛擬環境執行 pytest
 .\.venv\Scripts\pytest -v
 ```
 *(使用 uv 時為 `uv run pytest -v`)*
+
 

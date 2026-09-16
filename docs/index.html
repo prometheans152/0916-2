@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Forecast Web App - 台灣一週氣溫預報</title>
+  
+  <!-- Leaflet Map CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  
+  <!-- Application CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>🌤️ Temperature Forecast Web App</h1>
+      <p class="subtitle">AIoT 課程 HW10: 台灣一週氣溫預報視覺化 (GitHub Pages Edition · 均溫分級地圖)</p>
+      <div id="statusBadge" class="status-badge">⏳ 正在載入氣溫資料...</div>
+    </header>
+
+    <!-- Controls -->
+    <section class="controls-grid">
+      <div class="control-group">
+        <label for="regionSelect">Select a Region (請選擇預報地區)</label>
+        <select id="regionSelect">
+          <option>載入中...</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="dateSelect">Select Forecast Date (選擇地圖預報日期)</label>
+        <select id="dateSelect">
+          <option>載入中...</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Summary Metrics -->
+    <section class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-label">一週最高溫</div>
+        <div class="metric-value" id="metricHighest">-- °C</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">一週最低溫</div>
+        <div class="metric-value" id="metricLowest">-- °C</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">平均最高溫</div>
+        <div class="metric-value" id="metricAvgMax">-- °C</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">平均最低溫</div>
+        <div class="metric-value" id="metricAvgMin">-- °C</div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section">
+      <h2 class="section-title" id="mapSectionTitle">🗺️ 台灣六大分區氣溫預報地圖</h2>
+      
+      <!-- Permanent Color Legend Card -->
+      <div class="legend-card">
+        <div class="legend-title">🌡️ 均溫分級色階圖例 (Daily AvgT Color Legend)：</div>
+        <div class="legend-badges">
+          <span class="badge badge-blue">🔵 &lt; 20°C (低溫 / Blue)</span>
+          <span class="badge badge-green">🟢 20–25°C (舒適 / Green)</span>
+          <span class="badge badge-yellow">🟡 25–30°C (溫暖 / Yellow)</span>
+          <span class="badge badge-red">🔴 &gt; 30°C (炎熱 / Red)</span>
+        </div>
+        <div class="legend-note">
+          公式：<code>AvgT = (MinT + MaxT) / 2</code>；分界標準：<code>&lt;20°C</code>（藍）、<code>20°C &le; AvgT &lt; 25°C</code>（綠）、<code>25°C &le; AvgT &le; 30°C</code>（黃）、<code>&gt;30°C</code>（紅）。
+        </div>
+      </div>
+
+      <!-- Map Container -->
+      <div id="mapContainer"></div>
+      <p class="map-caption">
+        📍 <strong>說明</strong>：各分區標記顏色嚴格由當日平均氣溫 <code>AvgT = (MinT + MaxT) / 2</code> 之四級色階驅動；較大且具備深色外環之標記點為當前下拉選單所選之分區。座標點為代表性中心參考座標（北部: 臺北、中部: 臺中、南部: 高雄、東北部: 宜蘭、東部: 花蓮、東南部: 臺東），非行政邊界邊線。
+      </p>
+    </section>
+
+    <!-- Trend Chart Section -->
+    <section class="section">
+      <h2 class="section-title" id="chartSectionTitle">📈 一週氣溫趨勢圖</h2>
+      <div class="chart-container">
+        <canvas id="trendChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Detailed Table Section -->
+    <section class="section">
+      <h2 class="section-title" id="tableSectionTitle">📋 氣溫預報詳細資料</h2>
+      <div class="table-wrapper">
+        <table id="forecastTable">
+          <thead>
+            <tr>
+              <th>預報日期 (Date)</th>
+              <th>最低氣溫 MinT (°C)</th>
+              <th>最高氣溫 MaxT (°C)</th>
+              <th>當日平均氣溫 AvgT (°C)</th>
+              <th>均溫分級 (Category)</th>
+            </tr>
+          </thead>
+          <tbody id="forecastTableBody">
+            <tr><td colspan="5" style="text-align: center; color: #64748b;">載入中...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>AIoT 第二週 HW10 作業成果 · 資料來源：中央氣象署 (CWA) F-C0032-003 開放資料</p>
+      <p style="margin-top: 4px;">靜態網站託管於 GitHub Pages · 後端由 GitHub Actions 自動定期建置</p>
+    </footer>
+  </div>
+
+  <!-- Leaflet Map JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  
+  <!-- Application JS -->
+  <script src="app.js"></script>
+</body>
+</html>

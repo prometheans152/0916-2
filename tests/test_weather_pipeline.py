@@ -271,3 +271,93 @@ def test_streamlit_app_autobootstrap_with_live_mock(tmp_path, monkeypatch, sampl
     source = bootstrap_database(db_path=mock_db)
     assert "LIVE CWA" in source
     assert os.path.exists(mock_db)
+
+
+def test_github_pages_static_files_exist():
+    """Verify all required GitHub Pages static site files and workflow exist."""
+    repo_root = Path(__file__).parent.parent
+    index_html = repo_root / "docs" / "index.html"
+    style_css = repo_root / "docs" / "style.css"
+    app_js = repo_root / "docs" / "app.js"
+    forecast_json = repo_root / "docs" / "data" / "forecast.json"
+    workflow_yml = repo_root / ".github" / "workflows" / "pages.yml"
+
+    for file_path in [index_html, style_css, app_js, forecast_json, workflow_yml]:
+        assert file_path.exists(), f"Missing required file: {file_path}"
+        assert file_path.stat().st_size > 0, f"File is empty: {file_path}"
+
+
+def test_github_pages_forecast_json_schema_and_values():
+    """Verify docs/data/forecast.json has 42 rows, 6 regions, 7 dates, AvgT consistency and color-bin boundaries."""
+    repo_root = Path(__file__).parent.parent
+    forecast_json = repo_root / "docs" / "data" / "forecast.json"
+    with open(forecast_json, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    # 1. Top-level structure
+    assert "metadata" in data
+    assert "regions" in data
+    assert "dates" in data
+    assert "records" in data
+
+    # 2. Check 6 regions and 7 dates
+    expected_regions = sorted(["北部地區", "中部地區", "南部地區", "東北部地區", "東部地區", "東南部地區"])
+    assert sorted(data["regions"]) == expected_regions
+    assert len(data["dates"]) == 7
+
+    # 3. Check exactly 42 records (6 regions * 7 days)
+    records = data["records"]
+    assert len(records) == 42
+
+    # 4. Check formula, binning, and color consistency for every record
+    for r in records:
+        assert r["regionName"] in expected_regions
+        assert r["dataDate"] in data["dates"]
+        assert isinstance(r["mint"], int)
+        assert isinstance(r["maxt"], int)
+        assert r["mint"] <= r["maxt"]
+
+        # AvgT = (MinT + MaxT) / 2
+        expected_avg = calculate_avg_temp(r["mint"], r["maxt"])
+        assert r["avg_t"] == expected_avg
+
+        # Color bin boundaries
+        expected_bin = get_temp_bin(expected_avg)
+        assert r["temp_bin"] == expected_bin
+
+        # Color mapping
+        expected_color = get_temp_color(expected_avg)
+        assert r["temp_color"] == expected_color
+
+        # Representative coordinates and city
+        assert "lat" in r and 21.0 <= r["lat"] <= 26.0
+        assert "lon" in r and 119.0 <= r["lon"] <= 123.0
+        assert "city" in r and len(r["city"]) > 0
+
+
+def test_build_pages_data_fallback(tmp_path):
+    """Verify build_pages_data executes cleanly with fallback fixture."""
+    from scripts.build_pages_data import build_pages_data
+
+    out_file = tmp_path / "test_forecast.json"
+    payload = build_pages_data(output_path=out_file, force_fixture=True)
+
+    assert out_file.exists()
+    assert payload["metadata"]["total_records"] == 42
+    assert payload["metadata"]["total_regions"] == 6
+    assert payload["metadata"]["total_dates"] == 7
+    assert "Offline Sample" in payload["metadata"]["source"]
+
+
+def test_github_actions_pages_workflow_syntax():
+    """Verify .github/workflows/pages.yml configuration."""
+    repo_root = Path(__file__).parent.parent
+    workflow_path = repo_root / ".github" / "workflows" / "pages.yml"
+    content = workflow_path.read_text(encoding="utf-8")
+
+    assert "actions/deploy-pages" in content
+    assert "actions/upload-pages-artifact" in content
+    assert "pages: write" in content
+    assert "id-token: write" in content
+    assert "scripts/build_pages_data.py" in content
+
